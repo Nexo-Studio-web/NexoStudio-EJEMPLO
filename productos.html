@@ -1,0 +1,496 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | NexoStudio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #101827;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 18px;
+            flex-wrap: wrap;
+            padding: 25px 8%;
+            border-bottom: 1px solid #263148;
+        }
+
+        .logo {
+            color: #A78BFA;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #A78BFA;
+        }
+
+        main {
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        .etiqueta {
+            color: #A78BFA;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        h1 {
+            font-size: clamp(36px, 5vw, 52px);
+            margin: 18px 0;
+        }
+
+        .descripcion {
+            color: #CBD5E1;
+            font-size: 17px;
+            line-height: 1.8;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .boton {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 22px;
+            border-radius: 10px;
+            background: #7C5CFC;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .mensaje {
+            max-width: 700px;
+            margin: 60px auto 0;
+            padding: 35px 25px;
+            border: 1px solid #7C5CFC;
+            border-radius: 18px;
+            background: #0B1020;
+        }
+
+        .mensaje h2 {
+            color: #C4B5FD;
+        }
+
+        .mensaje p {
+            color: #CBD5E1;
+            line-height: 1.8;
+        }
+
+        footer {
+            padding: 25px;
+            text-align: center;
+            color: #94A3B8;
+            border-top: 1px solid #263148;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+            }
+
+            main {
+                padding: 50px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a class="logo" href="index.html">NexoStudio</a>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="ofertas.html">Ofertas</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <p class="etiqueta">NEXOSTUDIO · CATÁLOGO</p>
+
+        <h1>Explorá nuestros <span style="color: #A78BFA;">productos.</span></h1>
+
+        <p class="descripcion">
+            Encontrá tecnología, accesorios y equipos gamer para estudiar,
+            trabajar y disfrutar al máximo.
+        </p>
+
+        <div class="mensaje">
+            <h2>Próximamente, más productos</h2>
+            <p>
+                Estamos preparando nuestro catálogo para que puedas descubrir
+                todos los productos disponibles.
+            </p>
+
+            <a class="boton" href="index.html#proyectos">
+                Ver productos destacados
+            </a>
+        </div>
+    </main>
+
+  
+</body>
+</html>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #101827;
+            color: #F8FAFC;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 18px;
+            flex-wrap: wrap;
+            padding: 25px 8%;
+            border-bottom: 1px solid #263148;
+        }
+
+        .logo {
+            color: #A78BFA;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            gap: 22px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #A78BFA;
+        }
+
+        .portada {
+            text-align: center;
+            padding: 70px 20px 45px;
+        }
+
+        .etiqueta {
+            display: inline-block;
+            padding: 9px 15px;
+            border: 1px solid rgba(124, 92, 252, 0.5);
+            border-radius: 30px;
+            background: rgba(124, 92, 252, 0.1);
+            color: #C4B5FD;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            margin: 22px 0 15px;
+            font-size: clamp(34px, 5vw, 52px);
+            line-height: 1.15;
+        }
+
+        h1 span {
+            color: #A78BFA;
+        }
+
+        .descripcion {
+            max-width: 600px;
+            margin: 0 auto;
+            color: #CBD5E1;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .catalogo {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 25px;
+            max-width: 1250px;
+            margin: 0 auto;
+            padding: 25px 30px 85px;
+        }
+
+        .producto {
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(145deg, #151C30, #0B1020);
+            border: 1px solid rgba(124, 92, 252, 0.65);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(124, 92, 252, 0.08);
+            transition: transform 0.25s, box-shadow 0.25s;
+        }
+
+        .producto:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 0 25px rgba(124, 92, 252, 0.2);
+        }
+
+        .imagen-producto {
+            width: 100%;
+            height: 260px;
+            padding: 18px;
+            background: #0D1424;
+            object-fit: contain;
+            display: block;
+        }
+
+        .contenido {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex: 1;
+            padding: 25px;
+        }
+
+        .categoria {
+            margin: 0 0 10px;
+            color: #A78BFA;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .contenido h2 {
+            margin: 0 0 15px;
+            font-size: 22px;
+            line-height: 1.4;
+        }
+
+        .detalle {
+            margin: 0 0 25px;
+            color: #94A3B8;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .precio {
+            margin-top: auto;
+            margin-bottom: 20px;
+            color: #F8FAFC;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .boton {
+            display: block;
+            width: 100%;
+            padding: 15px 12px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #7C5CFC, #6240E8);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            transition: filter 0.2s;
+        }
+
+        .boton:hover {
+            filter: brightness(1.15);
+        }
+
+        footer {
+            padding: 28px 20px;
+            border-top: 1px solid #263148;
+            text-align: center;
+            color: #94A3B8;
+            font-size: 14px;
+        }
+
+        @media (max-width: 900px) {
+            .catalogo {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+            }
+
+            nav {
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .portada {
+                padding: 50px 20px 30px;
+            }
+
+            .catalogo {
+                grid-template-columns: 1fr;
+                padding: 20px 18px 60px;
+                gap: 22px;
+            }
+
+            .imagen-producto {
+                height: 240px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section class="portada">
+        <p class="etiqueta">NEXOSTUDIO · CATÁLOGO</p>
+
+        <h1>Nuestros <span>productos.</span></h1>
+
+        <p class="descripcion">
+            Explorá nuestra selección de tecnología y encontrá
+            el equipo ideal para vos.
+        </p>
+    </section>
+
+    <main class="catalogo">
+
+        <!-- PRODUCTO 1: NOTEBOOK LENOVO -->
+        <article class="producto">
+            <img
+                class="imagen-producto"
+                src="imagenes/principal.jpg"
+                alt="Notebook Lenovo"
+            >
+
+            <div class="contenido">
+                <p class="categoria">Notebooks</p>
+
+                <h2>Notebook Lenovo</h2>
+
+                <p class="detalle">
+                    Una opción tecnológica para estudiar,
+                    trabajar y disfrutar de tus actividades.
+                </p>
+
+                <p class="precio">$540.000</p>
+
+                <a
+                    class="boton"
+                    href="https://wa.me/549XXXXXXXXXX?text=Hola%2C%20quiero%20consultar%20por%20la%20notebook%20Lenovo."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Consultar por WhatsApp →
+                </a>
+            </div>
+        </article>
+
+        <!-- PRODUCTO 2: GABINETE GAMER -->
+        <article class="producto">
+            <img
+                class="imagen-producto"
+                src="imagenes/21-07-2026-12-07-45_hikaV21.webp"
+                alt="Gabinete gamer"
+            >
+
+            <div class="contenido">
+                <p class="categoria">Gaming</p>
+
+                <h2>Gabinete gamer</h2>
+
+                <p class="detalle">
+                    Un diseño pensado para darle personalidad
+                    a tu setup.
+                </p>
+
+                <p class="precio">$99.000</p>
+
+                <a
+                    class="boton"
+                    href="https://wa.me/549XXXXXXXXXX?text=Hola%2C%20quiero%20consultar%20por%20el%20gabinete%20gamer."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Consultar por WhatsApp →
+                </a>
+            </div>
+        </article>
+
+        <!-- PRODUCTO 3: MONITOR -->
+        <article class="producto">
+            <img
+                class="imagen-producto"
+                src="imagenes/monitor.webp"
+                alt="Monitor"
+            >
+
+            <div class="contenido">
+                <p class="categoria">Monitores</p>
+
+                <h2>Monitor</h2>
+
+                <p class="detalle">
+                    Una pantalla para acompañarte en tus sesiones
+                    de trabajo, estudio o gaming.
+                </p>
+
+                <p class="precio">$87.000</p>
+
+                <a
+                    class="boton"
+                    href="https://wa.me/549XXXXXXXXXX?text=Hola%2C%20quiero%20consultar%20por%20el%20monitor."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Consultar por WhatsApp →
+                </a>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        © 2026 NexoStudio · Tecnología para vos
+    </footer>
+
+</body>
+</html>

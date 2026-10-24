@@ -1,0 +1,421 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas | NexoStudio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #101827;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 18px;
+            flex-wrap: wrap;
+            padding: 25px 8%;
+            border-bottom: 1px solid #263148;
+        }
+
+        .logo {
+            color: #A78BFA;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #A78BFA;
+        }
+
+        main {
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        .etiqueta {
+            color: #A78BFA;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        h1 {
+            font-size: clamp(36px, 5vw, 52px);
+            margin: 18px 0;
+        }
+
+        .descripcion {
+            max-width: 600px;
+            margin: 0 auto;
+            color: #CBD5E1;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .oferta {
+            max-width: 750px;
+            margin: 55px auto 0;
+            padding: 35px 25px;
+            border: 1px solid #7C5CFC;
+            border-radius: 18px;
+            background: linear-gradient(145deg, #171F35, #0B1020);
+            box-shadow: 0 0 25px rgba(124, 92, 252, 0.12);
+        }
+
+        .oferta h2 {
+            color: #C4B5FD;
+            font-size: 27px;
+        }
+
+        .oferta p {
+            color: #CBD5E1;
+            line-height: 1.8;
+        }
+
+        .boton {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 14px 22px;
+            border-radius: 10px;
+            background: #7C5CFC;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            padding: 25px;
+            text-align: center;
+            color: #94A3B8;
+            border-top: 1px solid #263148;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+            }
+
+            main {
+                padding: 50px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a class="logo" href="index.html">NexoStudio</a>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="ofertas.html">Ofertas</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <p class="etiqueta">OPORTUNIDADES NEXOSTUDIO</p>
+
+        <h1>Ofertas <span style="color: #A78BFA;">destacadas.</span></h1>
+
+        <p class="descripcion">
+            Encontrá oportunidades en tecnología y accesorios para tu setup.
+        </p>
+
+        <div class="oferta">
+            <h2>¡Estate atento a las novedades!</h2>
+
+            <p>
+                Estamos preparando nuestras ofertas. Consultanos para conocer
+                los precios y la disponibilidad de los productos.
+            </p>
+
+            <a class="boton" href="contacto.html">
+                Consultar ofertas →
+            </a>
+        </div>
+    </main>
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas | NexoStudio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #101827;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        .logo {
+            color: #A78BFA;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #A78BFA;
+        }
+
+        .portada {
+            text-align: center;
+            padding: 75px 20px 45px;
+        }
+
+        .etiqueta {
+            display: inline-block;
+            color: #C4B5FD;
+            background: #292044;
+            border: 1px solid #514080;
+            border-radius: 30px;
+            padding: 9px 16px;
+            font-size: 13px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 22px 0 15px;
+        }
+
+        h1 span {
+            color: #A78BFA;
+        }
+
+        .portada p {
+            color: #B8C1D1;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        
+.ofertas {
+    max-width: 1100px;
+    margin: 20px auto 80px;
+    padding: 0 22px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+
+
+.tarjeta {
+    background: #0B1020;
+    color: #F8FAFC;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid #A855F7;
+    box-shadow:
+        0 0 10px rgba(168, 85, 247, 0.35),
+        0 0 25px rgba(0, 229, 255, 0.12);
+    padding: 25px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 0 15px rgba(168, 85, 247, 0.55),
+        0 0 30px rgba(0, 229, 255, 0.2);
+}
+
+
+
+
+
+        .icono {
+            font-size: 32px;
+        }
+
+        .tarjeta h2 {
+            font-size: 23px;
+            margin: 18px 0 12px;
+        }
+
+        .tarjeta p {
+            color: #B8C1D1;
+            line-height: 1.6;
+            min-height: 75px;
+        }
+
+        .precio {
+            color: #A78BFA;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .boton {
+            display: inline-block;
+            background: #7C5CFC;
+            color: white;
+            text-decoration: none;
+            padding: 13px 18px;
+            border-radius: 9px;
+            font-weight: bold;
+        }
+
+        .boton:hover {
+            background: #6846ED;
+        }
+
+        .nota {
+            text-align: center;
+            color: #9CA8BC;
+            padding: 0 20px 60px;
+            line-height: 1.6;
+        }
+
+        footer {
+            border-top: 1px solid #303D55;
+            padding: 25px;
+            text-align: center;
+            color: #9CA8BC;
+        }
+
+        @media (max-width: 600px) {.ofertas {
+    grid-template-columns: 1fr;}
+            header {
+                padding: 22px 6%;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            .portada {
+                padding-top: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+   
+
+    <section class="portada">
+        <span class="etiqueta">OPORTUNIDADES NEXOSTUDIO</span>
+
+        <h1>Ofertas para vos<span>.</span></h1>
+
+        <p>
+            Descubrí nuestras promociones y encontrá productos de tecnología
+            para renovar tu espacio sin complicarte.
+        </p>
+    </section>
+
+    <main class="ofertas">
+
+        <article class="tarjeta">
+            <div class="icono">💻</div>
+            <h2>Notebook Lenovo</h2>
+            <p>
+                Una opción para estudiar, trabajar y disfrutar de tus
+                actividades digitales.
+            </p>
+            <div class="precio">$540.000</div>
+            <a class="boton"
+               href="https://wa.me/549XXXXXXXXXX?text=Hola%2C%20quiero%20consultar%20por%20la%20notebook%20Lenovo">
+                Consultar oferta
+            </a>
+        </article>
+
+        <article class="tarjeta">
+            <div class="icono">🖥️</div>
+            <h2>Gabinete</h2>
+            <p>
+                Una alternativa para armar o renovar tu computadora
+                con un estilo moderno.
+            </p>
+            <div class="precio">$99.000</div>
+            <a class="boton"
+               href="https://wa.me/549XXXXXXXXXX?text=Hola%2C%20quiero%20consultar%20por%20el%20gabinete">
+                Consultar oferta
+            </a>
+        </article>
+
+        <article class="tarjeta">
+            <div class="icono">🎮</div>
+            <h2>Monitor</h2>
+            <p>
+                Ideal para acompañar tu computadora y disfrutar
+                de una mejor experiencia visual.
+            </p>
+            <div class="precio">$87.000</div>
+            <a class="boton"
+               href="https://wa.me/549XXXXXXXXXX?text=Hola%2C%20quiero%20consultar%20por%20el%20monitor">
+                Consultar oferta
+            </a>
+        </article>
+
+    </main>
+
+    <p class="nota">
+        Precios ilustrativos: confirmá disponibilidad y precio final antes de publicar.
+    </p>
+
+    <footer>
+        © 2026 NexoStudio · Tecnología para vos
+    </footer>
+
+</body>
+</html>

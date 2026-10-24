@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexoStudio | Diseño Web</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #101827;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 25px;
+            color: #A5B4FC;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 80px 20px;
+        }
+
+        h1 {
+            font-size: 42px;
+        }
+
+        p {
+            color: #CBD5E1;
+            font-size: 18px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 25px;
+            background: #7C5CFC;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        /* Tarjetas de servicios */
+        section div div {
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        section div div:hover {
+            transform: translateY(-8px);
+            background: #334155 !important;
+        }
+
+        /* Títulos */
+        h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            color: #A5B4FC;
+        }
+
+        /* Adaptación a celulares */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            header {
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+
+            main {
+                padding: 50px 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    
+
+<header style="display: flex; justify-content: space-between; align-items: center; padding: 25px 8%; flex-wrap: wrap; gap: 18px;">
+    <a href="index.html" style="margin: 0; padding: 0; background: none; color: #A78BFA; text-decoration: none; font-size: 24px; font-weight: bold;">
+        NexoStudio
+    </a>
+
+    <nav style="display: flex; gap: 20px; font-size: 16px; flex-wrap: wrap; align-items: center;">
+        <a href="index.html" style="margin: 0; padding: 0; background: none; color: white; text-decoration: none;">Inicio</a>
+
+        <a href="productos.html" style="margin: 0; padding: 0; background: none; color: white; text-decoration: none;">Productos</a>
+
+        <a href="ofertas.html" style="margin: 0; padding: 0; background: none; color: white; text-decoration: none;">Ofertas</a>
+
+        <a href="contacto.html" style="margin: 0; padding: 0; background: none; color: white; text-decoration: none;">Contacto</a>
+    </nav>
+</header>
+
+
+
+   
+
+
+<main id="inicio" style="padding: 90px 8%; min-height: 500px; background: linear-gradient(110deg, rgba(11,17,32,0.96), rgba(11,17,32,0.72)), url('imagenes/portada.jpg') center/cover no-repeat; display: flex; flex-direction: column; justify-content: center;">
+
+    <div style="display: flex; align-items: center; justify-content: space-between; gap: 50px; flex-wrap: wrap; max-width: 1400px; margin: 0 auto; width: 100%;">
+
+        <div style="flex: 1 1 350px; min-width: 0; text-align: left;">
+
+            <p style="display: inline-block; color: #C4B5FD; font-weight: bold; letter-spacing: 3px; font-size: 12px; padding: 10px 15px; border: 1px solid rgba(124,92,252,0.55); border-radius: 30px; background: rgba(124,92,252,0.12);">
+                ✦ TECNOLOGÍA PARA VOS
+            </p>
+
+            <h1 style="font-size: clamp(38px, 5vw, 66px); line-height: 1.08; max-width: 650px; margin: 20px 0; color: #F8FAFC; font-weight: 800; letter-spacing: -2px;">
+                La tecnología que buscás,
+                <span style="color: #A78BFA; text-shadow: 0 0 25px rgba(124,92,252,0.35);">en un solo lugar.</span>
+            </h1>
+
+            <p style="color: #CBD5E1; font-size: 17px; max-width: 530px; margin: 0; line-height: 1.9;">
+                Descubrí notebooks, accesorios y productos gamer para estudiar, trabajar y jugar al máximo.
+            </p>
+
+            <div style="display: flex; gap: 14px; flex-wrap: wrap; align-items: center; margin-top: 30px;">
+
+                <a href="#proyectos" style="display: inline-block; margin: 0; padding: 16px 25px; background: linear-gradient(135deg, #7C5CFC, #6240E8); color: white; text-decoration: none; border-radius: 10px; font-weight: bold; box-shadow: 0 0 22px rgba(124,92,252,0.3);">
+                    Explorar productos&nbsp; →
+                </a>
+
+                <a href="#contacto" style="display: inline-block; margin: 0; padding: 15px 24px; background: rgba(255,255,255,0.04); color: white; text-decoration: none; border: 1px solid rgba(167,139,250,0.65); border-radius: 10px; font-weight: bold;">
+                    Contactanos
+                </a>
+
+            </div>
+
+            <p style="color: #94A3B8; font-size: 13px; margin-top: 25px; line-height: 1.7;">
+                ✦ Tecnología&nbsp;&nbsp; · &nbsp;&nbsp;Gaming&nbsp;&nbsp; · &nbsp;&nbsp;Accesorios
+            </p>
+
+        </div>
+
+        <div style="flex: 1 1 350px; min-width: 0; text-align: center;">
+
+            <img src="imagenes/portada.jpg" alt="Setup tecnológico de NexoStudio" style="width: 100%; max-width: 500px; border-radius: 22px; object-fit: cover; border: 1px solid rgba(167,139,250,0.65); box-shadow: 0 0 30px rgba(124,92,252,0.2);">
+
+        </div>
+
+    </div>
+</main>
+
+  
+
+
+
+    
+<section id="servicios" style="margin-top: 90px; padding: 60px 20px; background: #0B1020; border-radius: 24px;">
+
+    <div style="text-align: center; max-width: 700px; margin: 0 auto 45px;">
+        <p style="color: #A78BFA; font-size: 12px; font-weight: 800; letter-spacing: 3px; margin-bottom: 14px;">
+            LA EXPERIENCIA NexoStudio
+        </p>
+
+        <h2 style="color: #F8FAFC; font-size: clamp(30px, 5vw, 42px); margin: 0 0 16px; font-weight: 800; letter-spacing: -1px;">
+            ¿Por qué elegirnos?
+        </h2>
+
+        <p style="color: #94A3B8; font-size: 16px; line-height: 1.8; margin: 0;">
+            Tecnología para vos, atención cercana y opciones para llevar tu experiencia al siguiente nivel.
+        </p>
+
+        <div style="width: 60px; height: 4px; background: #A78BFA; border-radius: 10px; margin: 24px auto 0; box-shadow: 0 0 14px rgba(167,139,250,0.6);"></div>
+    </div>
+
+    <div style="display: flex; justify-content: center; align-items: stretch; gap: 22px; flex-wrap: wrap; max-width: 1100px; margin: 0 auto;">
+
+        <div style="background: linear-gradient(145deg, #151C30, #0F172A); color: white; padding: 30px 25px; border-radius: 18px; width: 220px; flex: 1 1 220px; max-width: 270px; box-sizing: border-box; border: 1px solid #7C5CFC; box-shadow: 0 0 15px rgba(124,92,252,0.12);">
+            <div style="font-size: 30px; margin-bottom: 20px;">✦</div>
+            <h3 style="color: #C4B5FD; font-size: 20px; margin: 0 0 12px;">Variedad</h3>
+            <p style="color: #CBD5E1; font-size: 14px; line-height: 1.8; margin: 0;">
+                Encontrá productos tecnológicos para distintas necesidades y preferencias.
+            </p>
+        </div>
+
+        <div style="background: linear-gradient(145deg, #151C30, #0F172A); color: white; padding: 30px 25px; border-radius: 18px; width: 220px; flex: 1 1 220px; max-width: 270px; box-sizing: border-box; border: 1px solid #00D9FF; box-shadow: 0 0 15px rgba(0,217,255,0.10);">
+            <div style="font-size: 30px; margin-bottom: 20px;">⌁</div>
+            <h3 style="color: #67E8F9; font-size: 20px; margin: 0 0 12px;">Gaming</h3>
+            <p style="color: #CBD5E1; font-size: 14px; line-height: 1.8; margin: 0;">
+                Descubrí opciones para armar o mejorar tu setup gamer.
+            </p>
+        </div>
+
+        <div style="background: linear-gradient(145deg, #151C30, #0F172A); color: white; padding: 30px 25px; border-radius: 18px; width: 220px; flex: 1 1 220px; max-width: 270px; box-sizing: border-box; border: 1px solid #7C5CFC; box-shadow: 0 0 15px rgba(124,92,252,0.12);">
+            <div style="font-size: 30px; margin-bottom: 20px;">↗</div>
+            <h3 style="color: #C4B5FD; font-size: 20px; margin: 0 0 12px;">Atención personalizada</h3>
+            <p style="color: #CBD5E1; font-size: 14px; line-height: 1.8; margin: 0;">
+                Escribinos y te ayudamos a encontrar el producto que buscás.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+
+
+    
+<section id="proyectos" style="padding: 50px 20px;">
+    <div style="text-align: center; max-width: 760px; margin: 0 auto 42px;">
+
+    <p style="display: inline-block; margin: 0 0 18px; padding: 20px 15px; border: 1px solid rgba(124,92,252,0.45); border-radius: 30px; background: rgba(124,92,252,0.10); color: #7C5CFC; font-size: 12px; font-weight: 800; letter-spacing: 2px;">
+        NexoStudio STORE · TECNOLOGÍA
+    </p>
+
+    <h2 style="font-size: clamp(32px, 5vw, 48px); line-height: 1.15; font-weight: 800; letter-spacing: -1.5px; margin: 0 0 18px;">
+        Tecnología que lleva tu mundo
+        <span style="color: #7C5CFC;">más lejos.</span>
+    </h2>
+
+    <p style="font-size: 17px; line-height: 1.8; max-width: 580px; margin: 0 auto; opacity: 0.8;">
+        Descubrí equipos y accesorios seleccionados para estudiar,
+        trabajar y disfrutar al máximo.
+    </p>
+
+    <div style="width: 65px; height: 4px; border-radius: 10px; background: #7C5CFC; margin: 25px auto 0; box-shadow: 0 0 15px rgba(124,92,252,0.5);"></div>
+
+</div>
+    <div style="display: flex; justify-content: center; align-items: stretch; gap: 25px; flex-wrap: wrap; width: 100%; margin: 30px auto 0;">
+
+        <div style="background: #0B1020; color: #F8FAFC; border-radius: 18px; overflow: hidden; width: 320px; flex: 0 1 320px; box-sizing: border-box; border: 1px solid #A855F7; box-shadow: 0 0 10px rgba(168, 85, 247, 0.35), 0 0 25px rgba(0, 229, 255, 0.12);"> 
+
+<div style="position: relative; padding-top: 20px;">
+    <img src="imagenes/principal.jpg" alt="Laptop Lenovo" style="width: 100%; height: 300px; object-fit: contain; display: block;">
+
+<span style="position: absolute; top: 12px; left: 12px; background: #eaffc7; color: #101827; padding: 20px 14px; border: 2px solid #101827; border-radius: 20px; font-size: 13px; font-weight: bold; box-shadow: 0 0 6px #a3ff5c, 0 0 14px #a3ff5c;">
+        OFERTA
+    </span>
+</div>
+            <div style="padding: 15px;">
+                <h3>Notebook Lenovo</h3>
+                <p>Ideal para estudiar, trabajar y disfrutar de tu contenido favorito.</p>
+                
+<p style="font-weight: bold; font-size: 20px; color: #7C5CFC;">
+    Consultar precio
+    <p style="font-size: 13px; color: #94A3B8; margin: 15px 0 4px;">
+    PRECIO
+</p>
+
+<p style="font-size: 28px; font-weight: 800; color: #A78BFA; margin: 0 0 15px; text-shadow: 0 0 12px rgba(167,139,250,0.4);">
+    $540.000
+</p>
+</p>
+
+<a href="https://wa.me/5492231234567?text=Hola%2C%20me%20interesa%20la%20Notebook%20Lenovo"
+   target="_blank"
+   rel="noopener noreferrer"
+   style="display: inline-block; margin: 10px; padding: 12px 18px; background: #25D366; color: white; text-decoration: none; border-radius: 8px;">
+    Consultar por WhatsApp
+</a>
+
+                
+<p style="font-weight: bold; font-size: 20px; color: #7C5CFC;">
+    
+</p>
+
+
+
+
+            </div>
+        </div>
+
+   <div style="background: #0B1020; color: #F8FAFC; border-radius: 18px; overflow: hidden; width: 320px; flex: 0 1 320px; box-sizing: border-box; border: 1px solid #A855F7; box-shadow: 0 0 10px rgba(168, 85, 247, 0.35), 0 0 25px rgba(0, 229, 255, 0.12);">
+<div style="position: relative; background: #111827; padding: 20px;">
+    <img src="imagenes/21-07-2026-12-07-45_hikaV21.webp" alt="Gabinete Gamer" style="width: 100%; height: 300px; object-fit: contain; display: block;">
+
+
+<span style="position: absolute; top: 12px; left: 12px; background: #c9f0ff; color: #101827; padding: 8px 14px; border: 2px solid #101827; border-radius: 20px; font-size: 13px; font-weight: bold; box-shadow: 0 0 6px #38bdf8, 0 0 14px #38bdf8;">
+
+        NUEVO
+    </span>
+</div>
+            <div style="padding: 15px;">
+                <h3>Gabinete gamer</h3>
+                <p>Diseño moderno con iluminación RGB para tu setup gamer.</p>
+                
+<p style="font-weight: bold; font-size: 20px; color: #7C5CFC;">
+    Consultar precio
+</p>
+<p style="font-size: 13px; color: #94A3B8; margin: 15px 0 4px;">
+    PRECIO
+</p>
+
+<p style="font-size: 28px; font-weight: 800; color: #A78BFA; margin: 0 0 15px; text-shadow: 0 0 12px rgba(167,139,250,0.4);">
+    $99.000
+</p>
+<a href="https://wa.me/TUNUMERO?text=Hola%2C%20me%20interesa%20el%20Gabinete%20Gamer"
+   target="_blank"
+   rel="noopener noreferrer"
+   style="display: inline-block; margin: 10px; padding: 12px 18px; background: #25D366; color: white; text-decoration: none; border-radius: 8px;">
+    Consultar por WhatsApp
+</a>
+
+            </div>
+        </div>
+
+        <div style="background: #0B1020; color: #F8FAFC; border-radius: 18px; overflow: hidden; width: 320px; flex: 0 1 320px; box-sizing: border-box; border: 1px solid #A855F7; box-shadow: 0 0 10px rgba(168, 85, 247, 0.35), 0 0 25px rgba(0, 229, 255, 0.12);">
+
+<div style="position: relative; padding-top: 20px;">
+    <img src="imagenes/monitor.webp" alt="Monitor de 24 pulgadas" style="width: 100%; height: 300px; object-fit: contain; display: block;">
+
+<span style="position: absolute; top: 12px; left: 12px; background: #ffe1fa; color: #101827; padding: 8px 14px; border: 2px solid #101827; border-radius: 20px; font-size: 13px; font-weight: bold; box-shadow: 0 0 6px #ff65e5, 0 0 14px #ff65e5;">
+        20% 
+    </span>
+</div>
+            <div style="padding: 15px;">
+                <h3>Monitor de 24"</h3>
+                <p>Disfrutá tus juegos, películas y tareas con una imagen nítida.</p>
+                
+<p style="font-weight: bold; font-size: 20px; color: #7C5CFC;">
+    Consultar precio
+</p>
+<p style="font-size: 13px; color: #94A3B8; margin: 15px 0 4px;">
+    PRECIO
+</p>
+
+<p style="font-size: 28px; font-weight: 800; color: #A78BFA; margin: 0 0 15px; text-shadow: 0 0 12px rgba(167,139,250,0.4);">
+    $80.000
+</p>
+<a href="https://wa.me/TUNUMERO?text=Hola%2C%20me%20interesa%20el%20Gabinete%20Gamer"
+   target="_blank"
+   rel="noopener noreferrer"
+   style="display: inline-block; margin: 10px; padding: 12px 18px; background: #25D366; color: white; text-decoration: none; border-radius: 8px;">
+    Consultar por WhatsApp
+</a>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="contacto" style="padding: 60px 20px; text-align: center; background: #0F172A;">
+    <h2 style="color: white;">¿Tenés alguna consulta?</h2>
+
+    <p style="color: #CBD5E1;">
+        Escribinos y te ayudamos a encontrar lo que buscás.
+    </p>
+
+ 
+<a href="https://wa.me/5492231234567?text=Hola%2C%20quiero%20hacer%20una%20consulta"
+   target="_blank"
+   rel="noopener noreferrer"
+   style="display: inline-block; margin-top: 20px; padding: 15px 25px; background: #25D366; color: white; text-decoration: none; border-radius: 8px; font-weight: bold;">
+    💬 Contactanos por WhatsApp
+</a>
+
+    </a>
+</section>
+
